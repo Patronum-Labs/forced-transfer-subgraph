@@ -1,0 +1,15 @@
+{
+  "name": "@patronumlabs/forced-transfer-subgraph",
+  "version": "1.0.0",
+  "repository": "https://github.com/Patronum-Labs/forced-transfer-subgraph",
+  "license": "MIT",
+  "scripts": {
+    "create-local": "graph create testing/forcedTransfer --node http://127.0.0.1:8020",
+    "deploy-local": "graph deploy testing/forcedTransfer --ipfs http://localhost:5001 --node http://127.0.0.1:8020",
+    "remove-local": "graph remove testing/forcedTransfer --node http://127.0.0.1:8020"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.80.0",
+    "@graphprotocol/graph-ts": "^0.35.1"
+  }
+}
