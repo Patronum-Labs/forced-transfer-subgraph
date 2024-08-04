@@ -1,0 +1,24 @@
+specVersion: 0.0.4
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum/contract
+    name: ForcedTransfers
+    network: mainnet
+    source:
+      address: "0xBbfa4F54FF391957894c074A6eb34b7c967b7dAe"
+      abi: ForcedTransferABI
+      startBlock: 3193974
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - ForcedTransferAction
+      abis:
+        - name: ForcedTransferABI
+          file: ./abis/ForcedTransferABI.json
+      eventHandlers:
+        - event: ForcedTransfer(indexed address,indexed address,uint256)
+          handler: handleForcedTransfer
+      file: ./src/forcedTransferMapping.ts
