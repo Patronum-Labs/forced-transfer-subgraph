@@ -1,0 +1,40 @@
+[
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "sender",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "recipient",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "ForcedTransfer",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address payable",
+          "name": "recipient",
+          "type": "address"
+        }
+      ],
+      "name": "force",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function"
+    }
+  ]
