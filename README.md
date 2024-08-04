@@ -1,6 +1,6 @@
 # Forced Transfer Subgraph
 
-This Subgraph sources events from the ForcedTransfer Singleton contract.
+This Subgraph sources events from the [ForceTransfer Singleton](https://github.com/Patronum-Labs/force-transfer/) contract.
 
 ## Example Query
 
