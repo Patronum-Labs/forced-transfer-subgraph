@@ -1,0 +1,5 @@
+type ForcedTransferAction @entity {
+  id: ID!
+  sender: String!
+  amount: BigInt!
+}
